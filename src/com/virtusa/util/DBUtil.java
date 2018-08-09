@@ -13,6 +13,7 @@ public class DBUtil {
 			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/arrivallist", "root", "root");
 
 		} catch (Exception ex) {
+			ex.printStackTrace();
 			System.out.println("failed to create DB Connection!");
 		}
 		return connection;

@@ -4,9 +4,9 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.NotNull;
 
 public class RegistratioDetails {
-	@NotNull(message = "Name cannot be null")
+	@NotNull(message = "First Name cannot be null")
 	private String firstName;
-	@NotNull(message = "Name cannot be null")
+	@NotNull(message = "Last Name cannot be null")
 	private String lastName;	
 	
 	@Max(message="Provide valid phone number", value = 10)

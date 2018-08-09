@@ -1,27 +1,463 @@
-<form action="servlet1" method="get">  
 <!DOCTYPE html>
-<html>
-<body>
-<body>
-<h1>
-</h1>
-<h1 style="font-family:Comic Sans Ms;text-align="center";font-size:20pt;color:#00FF00;>
-Register for the event
-</h1>
+<!-- saved from url=(0093)https://ww2.virtusa.com/l/15882/2017-10-30/7y2wb6/?ref=%2F%2Fwww.virtusa.com%2Four-offices%2F -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!--<base href="://ww2.virtusa.com">--><base href=".">
+		
+		
+		<meta name="description" content="">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./bootstrap.min(1).css">
+		<link rel="stylesheet" href="./font-awesome.min(1).css">
 
-<form>
-  First name:<br>
-  <input type="text" name="firstname"><br>
-  Last name:<br>
-  <input type="text" name="lastname"><br>
-  Phone:<br>
-  <input type="text" name="phoneNumber"><br>
-  Email:<br>
-  <input type="text" name="email"><br>
-  <input type="submit" value="Submit"><br><br>
-</form>
-</body>
 
-</html>
- 
-</form>  
+		<link rel="stylesheet" id="nextfly-style-css" href="./style.css" type="text/css" media="">
+
+		<link href="./css(2)" rel="stylesheet">
+		<script type="text/javascript" src="./pd.js"></script><script type="text/javascript" async="" src="./ga.js"></script><script src="./jquery-2.2.4.min.js"></script>
+		<style>
+		body,
+		html {
+		    font-family: 'Open Sans', sans-serif;
+		    font-size:14px;
+		    width:100%;
+		    height:100%;
+		    background:transparent !important;
+		}
+		form {
+		    display:inline-block;
+		}
+		form.form span.error {
+            clear: left;
+            display: block;
+            font-weight: bold;
+            margin-top: 2px;
+            padding-left: 166px
+        }
+        form.form span.value {
+            display: block;
+            margin-left: 0;
+        }
+        form.form .value span {
+            display: block
+        }
+        form.form .no-label .value,
+        form.form .no-label .description {
+            margin-left: 0
+        }
+        form.form span.unsubscribe-value {
+            display: block
+        }
+        form.form sup {
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: normal;
+            text-decoration: underline
+        }
+        form.form p.required,
+        form.form span.required,
+        form.form label.required {
+            font-weight: bold
+        }
+        form.form p.required label,
+        form.form span.required label {
+            background: url(/images/required.gif) no-repeat bottom right
+        }
+        form.form p span {
+            font-weight: normal
+        }
+        form.form p span.description {
+            clear: both;
+            display: block;
+            margin-left: 153px
+        }
+        form.form p.email-pref span.description {
+            display: block;
+            margin-left: 5px;
+            font-size: .9em
+        }
+        .h2, h2 {
+            font-size: 27px;
+            padding: 0 15px;
+        }
+        form.form p {
+            clear: left;
+            line-height: 1.4em;
+            margin: 3px 5px;
+            padding: 3px 2px
+        }
+        form.form .hdr {
+            margin: 15px 20px 0 !important;
+            color: #3d44ac;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        * html form.form p {
+            margin-top: 0
+        }
+        form.form ul,
+        form.form ol {
+            line-height: 1.5em;
+            margin-bottom: 1em
+        }
+        form.form li {
+            line-height: 1.5em
+        }
+        form.form p.hidden,
+        form.form .hidden {
+            position: absolute;
+            width: 190px;
+            left: -999px
+        }
+        .inline {
+            background: 0;
+            display: inline;
+            float: none;
+            font-weight: normal;
+            line-height: 2em;
+            margin-left: 5px;
+            padding: 0;
+            text-align: left;
+            vertical-align: baseline
+        }
+        form.form p label {
+            display: block;
+            float: left;
+            margin: 5px 0 5px;
+            padding: 3px 13px 0 0;
+            text-align: left;
+            font-weight:600 !important;
+            width: 100%;
+        }
+        form.form p span.value label {
+            font-weight: 400 !important;
+            float: none;
+            display: inline;
+            margin: 0 0 0 5px;
+            
+        }
+        * html form.form p label {
+            margin-right: -0.2em
+        }
+        form.form p.no-label,
+        form.form p.email-pref {
+            margin: .2em .5em 0.2em 0.5em;
+            padding: 0;
+            color: #bb0000;
+        }
+        form.form p.submit {
+            margin: 1em .5em 1.2em 1.5em;
+            padding: 0;
+            float:left;
+        }
+        form.form p.inline {
+            margin: 0 0 5px 160px;
+            padding: 0 0 3px
+        }
+        *:first-child+html form.form p.inline {
+            margin-left: 160
+        }
+        form.form p.full-width {
+            clear: none;
+            margin: 0;
+            padding: 0
+        }
+        form.form p.full-width a,
+        form.form p span.inline a {
+            display: inline;
+            line-height: 16px;
+            margin: 0;
+            padding: 0
+        }
+        form.form p.submit input {
+            margin: 0 10px 0 0;
+            padding: 5px 28px;
+            border-radius: 4px;
+        }
+        form.form select {
+            font-weight: normal
+        }
+        form.form select option {
+            margin: 0;
+            padding: 0 .3em
+        }
+        form.form textarea.standard {
+            height: 70px;
+            overflow: auto;
+            padding: 2px;
+            width: 100%;
+            float: none
+        }
+        form.form input {
+            font-weight: normal;
+        }
+        *:first-child+html form.form input {
+            margin-right: 2px
+        }
+        * html form.form input {
+            padding-right: 0
+        }
+        form.form div.error {
+            padding: 0 0 .5em 170px;
+            color: # 8 b0000
+        }
+        form.form div.message {
+            color: green
+        }
+        form.form input.date {
+            background: url(/images/calendar.png) no - repeat left;
+            padding - left: 20 px
+        }
+        .red - color,
+        form.form p.error,
+        form.form span.error,
+        form.form div.error,
+        form.form p.error label {
+            color: #8b0000
+        }
+        .red-background,
+        form.form p.errors {
+            border: 1px #bb0000 dashed;
+            color: #bb0000;
+            margin: 10px 20px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        .btn {
+            letter-spacing: 0!important;
+            -webkit-transition: 0.3s!important;
+            -o-transition: 0.3s!important;
+            transition: 0.3s!important;
+            border-radius: 30px!important;
+        }
+        .btn.btn-primary {
+            background: #3d44ac!important;
+            border: none !important;
+            border: 2px solid transparent !important;
+            font-size: 17px;
+        }
+        .btn.btn-primary:hover {
+            background: #ff6c2d !important;
+        }
+        .form-field input {
+            border: none;
+            background: #eae9e8;
+            padding: 17px;
+            width: 100%;
+            color: #333;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+            line-height: 1.2;
+            border-radius: 0;
+            height: auto;
+            margin-bottom: 18px;
+            box-shadow: none;
+        }
+        
+        
+        form.form p label {
+            color: #000000;
+        }
+        
+        
+        form.form p label {
+            display: block;
+            float: left;
+            margin: 5px 0 5px;
+            padding: 3px 13px 0 0;
+            text-align: left;
+            font-weight: 600 !important;
+            width: 100%;
+            font-size: 11pt !important;
+        }
+        
+        form.form p.submit {
+            margin: 1em .5em 1.2em 1.5em;
+            padding: 0;
+            float: left;
+        }
+        
+        h1 {
+            margin: 20px;
+            font-size: 32px;
+            font-weight: 800;
+            color: #333;
+        }
+        .form-control {
+            padding: 17px !important;
+            border: transparent !important;
+            background: #eae9e8 !important;
+            min-height: 52px !important;
+        }
+        .set-height {
+            min-height: 114px;
+            padding:0 7px;
+        }
+        @media (max-width:768px){
+            .set-height {
+                min-height: auto;
+            }
+        }
+        input[type=checkbox], input[type=radio] {
+            width: auto;
+            margin: 0 10px 0 0;
+        }
+	</style>
+	    
+	<script type="text/javascript" src="./piUtils.js"></script><script type="text/javascript">
+piAId = '16882';
+piCId = '101346';
+piHostname = 'pi.pardot.com';
+if(!window['pi']) { window['pi'] = {}; } pi = window['pi']; if(!pi['tracker']) { pi['tracker'] = {}; } pi.tracker.pi_form = true;
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script><script type="text/javascript" src="./analytics(2)"></script><script type="text/javascript" src="./analytics(3)"></script></head>
+	<body>
+<header id="masthead" class="site-header innerheader fixed-header">
+		<div class="col">
+  <div class="site-branding">
+            <p class="site-title"><a href="https://www.virtusa.com/" rel="home">
+            <img src="https://www.virtusa.com/wp-content/uploads/2017/12/Virtusa-Logo-Light-60px.png" class="site-logo"> </a></p>
+      </div>
+  <!-- .site-branding --> 
+</div>
+	</header>
+	<script>
+		var _gaq = _gaq || []; 
+			_gaq.push(['_setAccount', 'UA-1275487-1']); 
+			_gaq.push(['_setDomainName', 'virtusa.com']); 
+			_gaq.push(['_setAllowLinker', true]); 
+			_gaq.push(['_trackPageview']); 
+			(function() { 
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; 
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); 
+			})();
+			
+	function trackevent(c,a,l){
+	    _gaq.push(['_trackEvent',c,a,l]);
+	}
+			
+	</script>
+		<form accept-charset="UTF-8" method="post" action="servlet1" class="form" id="pardot-form">
+
+<style type="text/css">
+form.form p label { color: #000000; }
+form.form .pd-checkbox .value span { display: block !important; }
+</style>
+	<h1>We'd love to talk</h1>		
+		<div class="col-xs-12 col-md-6 col-sm-6 col-lg-6 set-height">
+			<p class="form-field  first_name pd-text required    ">				
+				<label class="field-label" for="15882_478586pi_15882_478586">First Name</label>
+				<input type="text" name="firstname" id="15882_478586pi_15882_478586" value="" class="text form-control" size="30" maxlength="40" onchange="">
+			</p>
+			</div>
+			<div id="error_for_15882_478586pi_15882_478586" style="display:none;"></div>
+		<div class="col-xs-12 col-md-6 col-sm-6 col-lg-6 set-height">
+			<p class="form-field  last_name pd-text required    ">
+					<label class="field-label" for="15882_478588pi_15882_478588">Last Name</label>
+				<input type="text" name="lastname" id="15882_478588pi_15882_478588" value="" class="text form-control" size="30" maxlength="80" onchange="">
+			</p>
+			</div>
+			<div id="error_for_15882_478588pi_15882_478588" style="display:none;"></div>
+		<div class="col-xs-12 col-md-6 col-sm-6 col-lg-6 set-height">
+			<p class="form-field  email pd-text required    ">
+					<label class="field-label" for="15882_445563pi_15882_445563">Email</label>
+				<input type="text" name="email" id="15882_445563pi_15882_445563" value="" class="text form-control" size="30" maxlength="255" onchange="piAjax.auditEmailField(this, 15882, 445563, 168530675);">
+			</p>
+			</div>
+		<div class="col-xs-12 col-md-6 col-sm-6 col-lg-6 set-height">
+			<p class="form-field  phone pd-text     ">
+					<label class="field-label" for="15882_477936pi_15882_477936">Phone</label>
+				<input type="text" name="phoneNumber" id="15882_477936pi_15882_477936" value="" class="text form-control" size="30" maxlength="40" onchange="">
+			</p>
+			</div>
+			<div id="error_for_15882_477936pi_15882_477936" style="display:none;"></div>
+	<p style="position:absolute; width:190px; left:-9999px; top: -9999px;visibility:hidden;">
+		<label for="pi_extra_field">Comments</label>
+		<input type="text" name="pi_extra_field" id="pi_extra_field">
+	</p>		
+		<p class="submit">
+			<input type="submit" class="btn btn-primary btn-sm" accesskey="s" value="Submit">
+		</p>
+	<p><script>
+// Get height of document 
+function getDocHeight(doc) {
+    doc = doc || document;
+    
+    var body = doc.body, html = doc.documentElement;
+    var height = Math.max( body.scrollHeight, body.offsetHeight, 
+        html.clientHeight, html.scrollHeight, html.offsetHeight );
+    return height;
+}
+
+// send docHeight onload
+function sendDocHeightMsg(e) {
+    var ht = getDocHeight();
+    parent.postMessage( JSON.stringify( {'docHeight': $('form').height()+20} ), '*' );
+}
+
+// assign onload handler 
+if ( window.addEventListener ) {
+    window.addEventListener('load', sendDocHeightMsg, false);
+} else if ( window.attachEvent ) { // ie8
+    window.attachEvent('onload', sendDocHeightMsg);
+}
+  
+ var resizeId;
+$(window).resize(function() {
+    clearTimeout(resizeId);
+    resizeId = setTimeout(doneResizing, 1000);
+});
+
+function doneResizing(){
+  clearTimeout(resizeId);  
+  sendDocHeightMsg();
+}
+  
+function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+};
+  
+var ref=unescape(getUrlParameter('ref'));
+$('#15882_478426pi_15882_478426').attr('value',ref);  
+  </script>
+<script type="text/javascript">
+//<![CDATA[
+	var anchors = document.getElementsByTagName("a");
+	for (var i=0; i<anchors.length; i++) {
+		var anchor = anchors[i];
+		if(anchor.getAttribute("href")&&!anchor.getAttribute("target")) {
+			anchor.target = "_top";
+		}
+	}	
+//]]>
+</script>
+<input type="hidden" name="hiddenDependentFields" id="hiddenDependentFields" value=""></form>
+<script type="text/javascript">(function(){ pardot.$(document).ready(function(){ (function() {
+	var $ = window.pardot.$;
+	window.pardot.FormDependencyMap = [];
+
+	$('.form-field-master input, .form-field-master select').each(function(index, input) {
+		$(input).on('change', window.piAjax.checkForDependentField);
+		window.piAjax.checkForDependentField.call(input);
+	});
+})(); });})();</script>
+	<script>
+    	$(document).ready(function() {
+    	    $('.text, .select, .standard ').addClass('form-control');
+    	});
+	</script>
+	
+</body></html>

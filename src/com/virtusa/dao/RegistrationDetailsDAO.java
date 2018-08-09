@@ -17,12 +17,13 @@ public class RegistrationDetailsDAO {
 	
 	public void save(RegistratioDetails registrationDetails) throws Exception {
 		String sql = "insert into arrivals values (?,?,?,?)";
+		ps = getStatement(sql);
 		ps.setString(1, registrationDetails.getFirstName());
 		ps.setString(2, registrationDetails.getLastName());
 		ps.setString(3, registrationDetails.getPhoneNumber().toString());
 		ps.setString(4, registrationDetails.getEmail());
-
-		getStatement(sql).execute();
+		ps.executeUpdate();
+		//getStatement(sql).execute();
 		dBUtil.closeConnection();
 	}
 	
